@@ -4,13 +4,14 @@
   "info": {
     "singularName": "album-genre",
     "pluralName": "album-genres",
-    "displayName": "Album_genre"
+    "displayName": "Album_genre",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "is_gerne_album": {
+    "id_gerne_album": {
       "type": "biginteger"
     },
     "id_genre": {

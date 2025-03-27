@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiAlbumGenreAlbumGenre extends Struct.CollectionTypeSchema {
   collectionName: 'album_genres';
   info: {
+    description: '';
     displayName: 'Album_genre';
     pluralName: 'album-genres';
     singularName: 'album-genre';
@@ -385,7 +386,7 @@ export interface ApiAlbumGenreAlbumGenre extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     id_album: Schema.Attribute.BigInteger;
     id_genre: Schema.Attribute.BigInteger;
-    is_gerne_album: Schema.Attribute.BigInteger;
+    id_gerne_album: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -467,6 +468,7 @@ export interface ApiArtistArtist extends Struct.CollectionTypeSchema {
 export interface ApiChartChart extends Struct.CollectionTypeSchema {
   collectionName: 'charts';
   info: {
+    description: '';
     displayName: 'Chart';
     pluralName: 'charts';
     singularName: 'chart';
@@ -478,7 +480,7 @@ export interface ApiChartChart extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    explicit_lyrics: Schema.Attribute.Text;
+    explicit_lyrics: Schema.Attribute.Boolean;
     id_album: Schema.Attribute.BigInteger;
     id_artist: Schema.Attribute.BigInteger;
     id_chart: Schema.Attribute.UID;

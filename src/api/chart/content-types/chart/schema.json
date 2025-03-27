@@ -4,7 +4,8 @@
   "info": {
     "singularName": "chart",
     "pluralName": "charts",
-    "displayName": "Chart"
+    "displayName": "Chart",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,14 +23,14 @@
     "preview": {
       "type": "text"
     },
-    "explicit_lyrics": {
-      "type": "text"
-    },
     "id_artist": {
       "type": "biginteger"
     },
     "id_album": {
       "type": "biginteger"
+    },
+    "explicit_lyrics": {
+      "type": "boolean"
     }
   }
 }

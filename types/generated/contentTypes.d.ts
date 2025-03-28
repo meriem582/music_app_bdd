@@ -457,7 +457,7 @@ export interface ApiArtistArtist extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     nb_album: Schema.Attribute.BigInteger;
     nb_fans: Schema.Attribute.BigInteger;
-    picture: Schema.Attribute.Media<'images' | 'files'>;
+    picture: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

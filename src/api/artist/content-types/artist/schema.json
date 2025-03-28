@@ -21,20 +21,14 @@
     "link": {
       "type": "text"
     },
-    "picture": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
-    },
     "nb_album": {
       "type": "biginteger"
     },
     "nb_fans": {
       "type": "biginteger"
+    },
+    "picture": {
+      "type": "text"
     }
   }
 }

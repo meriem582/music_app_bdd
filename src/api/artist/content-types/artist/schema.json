@@ -16,7 +16,8 @@
       "required": true
     },
     "id_artist": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "unique": true
     },
     "link": {
       "type": "text"

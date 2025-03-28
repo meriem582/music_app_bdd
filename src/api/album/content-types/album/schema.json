@@ -25,7 +25,8 @@
       "type": "text"
     },
     "id_album": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "unique": true
     },
     "id_artist": {
       "type": "biginteger"

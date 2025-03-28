@@ -416,7 +416,7 @@ export interface ApiAlbumAlbum extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    id_album: Schema.Attribute.BigInteger;
+    id_album: Schema.Attribute.BigInteger & Schema.Attribute.Unique;
     id_artist: Schema.Attribute.BigInteger;
     link: Schema.Attribute.Text & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -446,7 +446,7 @@ export interface ApiArtistArtist extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    id_artist: Schema.Attribute.BigInteger;
+    id_artist: Schema.Attribute.BigInteger & Schema.Attribute.Unique;
     link: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

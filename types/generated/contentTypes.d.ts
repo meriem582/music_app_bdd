@@ -483,7 +483,7 @@ export interface ApiChartChart extends Struct.CollectionTypeSchema {
     explicit_lyrics: Schema.Attribute.Boolean;
     id_album: Schema.Attribute.BigInteger;
     id_artist: Schema.Attribute.BigInteger;
-    id_chart: Schema.Attribute.UID;
+    id_chart: Schema.Attribute.BigInteger;
     link: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::chart.chart'> &

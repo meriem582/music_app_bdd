@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_chart": {
-      "type": "uid"
-    },
     "title": {
       "type": "text"
     },
@@ -31,6 +28,9 @@
     },
     "explicit_lyrics": {
       "type": "boolean"
+    },
+    "id_chart": {
+      "type": "biginteger"
     }
   }
 }

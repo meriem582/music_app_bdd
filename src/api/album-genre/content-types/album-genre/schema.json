@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_gerne_album": {
-      "type": "biginteger"
-    },
     "id_genre": {
       "type": "biginteger"
     },

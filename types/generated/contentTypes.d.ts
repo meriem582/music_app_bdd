@@ -386,7 +386,6 @@ export interface ApiAlbumGenreAlbumGenre extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     id_album: Schema.Attribute.BigInteger;
     id_genre: Schema.Attribute.BigInteger;
-    id_gerne_album: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
